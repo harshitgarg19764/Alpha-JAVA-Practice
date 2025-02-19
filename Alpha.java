@@ -16,10 +16,14 @@ public class Alpha {
             // cnd.q4();
             // cnd.q5();
 
+        Loops lps = new Loops();
 
+            // lps.q1();
+            // lps.q2();
+            // lps.q3();
+            // lps.q4();
 
-
-
+        
     }
 
         
