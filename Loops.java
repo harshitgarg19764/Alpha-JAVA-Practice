@@ -61,4 +61,81 @@ public class Loops {
                 System.out.println( num + "*" + i + "=" + (num*i));
             }
         }
+
+        void sum(){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter Number");
+            int num = sc.nextInt();
+            int sum=0;
+            for(int i=0;i<=num;i++){
+                sum +=i;
+            }
+            System.out.println(sum);
+        }
+
+        void SquarePattern(){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter Number");
+            int num = sc.nextInt();
+
+            for(int i=0;i<num;i++){
+                for(int j=0;j<num;j++){
+                    System.out.print("*");
+                }
+                System.out.println("");
+            }
+        }
+
+        void ReverseNumber(){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter Number");
+            int num = sc.nextInt();
+            int reverse =0;
+            int digit =0;
+            while(num!=0){
+                digit = num%10;
+                System.out.println(digit);
+
+                reverse = reverse*10 + digit;
+
+                num = num/10;
+            }
+            System.out.println(reverse);
+        }
+
+        void PrimeNumber(){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter Number");
+            int num = sc.nextInt();
+            boolean isPrime = true;
+
+            for(int i=2;i<num;i++){
+                if(num%i==0){
+                    isPrime = false;
+                }
+                break;
+            }
+            if(isPrime==true){
+                System.out.println("Prime");
+            }
+            else{
+                System.out.println("Not Prime");
+            }
+
+        }
+
+        void Continue(){
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter Number");
+            int num = sc.nextInt();
+
+            for(int i =1 ; i<=num;i++){
+                if(i%10==0){
+                    continue;
+                }
+                else{
+                    System.out.println(i);
+                }
+            }
+        }
     }

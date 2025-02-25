@@ -22,7 +22,16 @@ public class Alpha {
             // lps.q2();
             // lps.q3();
             // lps.q4();
+            // lps.sum();
+            // lps.SquarePattern();
+            // lps.ReverseNumber();
+            // lps.PrimeNumber();
+            // lps.Continue();
 
+
+        
+
+        
         
     }
 
