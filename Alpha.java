@@ -1,5 +1,9 @@
+import java.util.Scanner;
+
+
 public class Alpha {
     public static void main(String[] args) {
+        
 
         Variable vrb = new Variable();
             // vrb.q1();
@@ -27,8 +31,29 @@ public class Alpha {
             // lps.ReverseNumber();
             // lps.PrimeNumber();
             // lps.Continue();
+            // lps.PrimeRange();
+            // lps.BittoDec();
+            
+            Pattern ptn = new Pattern();
+            
+            // ptn.InvertedStar();
+            // ptn.HalfPyramid();
+            // ptn.CharacterPyramid();
+            
 
 
+
+            Method mtd = new Method();
+            // mtd.PrimeRange();
+            // mtd.BittoDec();
+            // mtd.DectoBit();
+            // System.out.println(mtd.q1(3,4,5));
+            // System.out.println(mtd.q2(6));
+        //    mtd.q3(121);
+        //    mtd.q4(4,5);
+        //    mtd.q5(123);
+
+            
         
 
         

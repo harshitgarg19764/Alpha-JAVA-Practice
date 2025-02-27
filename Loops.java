@@ -122,6 +122,7 @@ public class Loops {
                 System.out.println("Not Prime");
             }
 
+
         }
 
         void Continue(){
