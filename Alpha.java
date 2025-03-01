@@ -31,8 +31,6 @@ public class Alpha {
             // lps.ReverseNumber();
             // lps.PrimeNumber();
             // lps.Continue();
-            // lps.PrimeRange();
-            // lps.BittoDec();
             
             Pattern ptn = new Pattern();
             
@@ -49,9 +47,23 @@ public class Alpha {
             // mtd.DectoBit();
             // System.out.println(mtd.q1(3,4,5));
             // System.out.println(mtd.q2(6));
-        //    mtd.q3(121);
-        //    mtd.q4(4,5);
-        //    mtd.q5(123);
+            //    mtd.q3(121);
+            //    mtd.q4(4,5);
+            //    mtd.q5(123);
+
+        AdvancePattern apn = new AdvancePattern();
+            // apn.HollowRectangle();
+            // apn.InvertedTriangle();
+            // apn.InvertedHalfPyramid();
+            // apn.FloydTriangle();
+            // apn.Triangle01();
+            // apn.Butterfly();
+            // apn.Rhombus();
+            // apn.HollowRhombus();
+            // apn.DiamondPattern();
+            apn.NumPyramid();
+
+
 
             
         
