@@ -215,6 +215,27 @@ public class AdvancePattern {
             }
     }
 
+    public void PalindromicNum(){
+        Scanner sc = new Scanner(System.in);
+            System.out.println("Enter Num");
+            int num = sc.nextInt();
+
+        for(int i=1;i<=5;i++){
+            for(int spc=1;spc<=num-i;spc++){
+                System.out.print(" ");
+            }
+
+            for(int j=i;j>0;j--){
+                System.out.print(j);
+            }
+            for(int k=2;k<=i;k++){
+                System.out.print(k);
+            }
+
+            System.out.println();
+        }
+    }
+
 
 
 

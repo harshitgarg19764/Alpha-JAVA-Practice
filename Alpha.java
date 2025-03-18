@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.*;
 
 
 public class Alpha {
@@ -61,7 +62,33 @@ public class Alpha {
             // apn.Rhombus();
             // apn.HollowRhombus();
             // apn.DiamondPattern();
-            apn.NumPyramid();
+            // apn.NumPyramid();
+            // apn.PalindromicNum();
+
+        Arrays arr = new Arrays();
+            int num[] = {7,1,5,3,6,4};
+            int key = 9;
+
+                // arr.largestNum(num);
+                
+                // System.out.println(arr.binarySearch(num, key));
+
+                // arr.reverseArray(num);
+                //     for(int i=0;i<num.length;i++){
+                //         System.out.print( num[i] + " " );
+                //     }
+
+                // arr.pairsArray(num);
+                // arr.subArrays(num);
+                // arr.sumSubArrays(num);
+                // System.out.println(arr.q1(num));
+                // arr.prefixArr(num);
+                // arr.kadanes(num);
+                // arr.rainWater(num);
+                arr.buySellStock(num);
+                
+
+
 
 
 
