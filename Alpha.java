@@ -1,11 +1,8 @@
 import java.util.Scanner;
 import java.util.*;
-
-
+    
 public class Alpha {
     public static void main(String[] args) {
-        
-
         Variable vrb = new Variable();
             // vrb.q1();
             // vrb.q2();
@@ -66,8 +63,8 @@ public class Alpha {
             // apn.PalindromicNum();
 
         Arrays arr = new Arrays();
-            int num[] = {7,1,5,3,6,4};
-            int key = 9;
+            int num[] = {1,2,3,4};
+            int key = 1;
 
                 // arr.largestNum(num);
                 
@@ -85,8 +82,21 @@ public class Alpha {
                 // arr.prefixArr(num);
                 // arr.kadanes(num);
                 // arr.rainWater(num);
-                arr.buySellStock(num);
-                
+                // arr.buySellStock(num);
+                // arr.q3(num);
+
+        Sort srt = new Sort();
+        // srt.bubbleSort(num);
+
+        TwoDimensionArray tda = new TwoDimensionArray();
+        int matrix[][]={{1,2,3},{10,10,10},{10,7,12}};
+        // tda.minMax();
+        // tda.spiralMatrix(matrix);
+        // tda.diaognalSum(matrix);
+        // tda.staircaseSearch(matrix, key);
+        // tda.q1(matrix);
+        // tda.q2(matrix);
+        tda.q3(matrix);
 
 
 

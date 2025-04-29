@@ -198,10 +198,33 @@ public class Arrays {
             }
         }
                 return false;
-    }
+            }
 
+
+        // public boolean q2(int num[]){
+                
+        // }
+
+        public void q3(int num[]){
+        int buyPrice = Integer.MAX_VALUE;
+        int maxProfit =0;
+        for(int i=0;i<num.length;i++){
+            if (num[i]<buyPrice) {
+                int profit = num[i]-buyPrice;
+    
+                maxProfit = Math.max(maxProfit, profit);
+            }
+            else{
+                buyPrice = num[i];
+            }
+
+        }
+        System.out.println(maxProfit);
+    }
 
 
             }
 
 
+
+    
