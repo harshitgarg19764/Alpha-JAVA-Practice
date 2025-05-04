@@ -3,6 +3,8 @@ import java.util.*;
     
 public class Alpha {
     public static void main(String[] args) {
+
+
         Variable vrb = new Variable();
             // vrb.q1();
             // vrb.q2();
@@ -96,9 +98,18 @@ public class Alpha {
         // tda.staircaseSearch(matrix, key);
         // tda.q1(matrix);
         // tda.q2(matrix);
-        tda.q3(matrix);
+        // tda.q3(matrix);
 
-
+        Strings str = new Strings();
+        String st = "ABCD";
+        String st1 = "dcan";
+        // System.out.println(str.pallindromeString(st));
+        // str.shortestPath(st);
+        // str.toUpercase(st);
+        // str.stringCompression(st);
+        // str.q1(st);
+        // str.q2(st, st1);
+        str.tolower(st);
 
 
 
