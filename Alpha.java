@@ -109,7 +109,28 @@ public class Alpha {
         // str.stringCompression(st);
         // str.q1(st);
         // str.q2(st, st1);
-        str.tolower(st);
+        // str.tolower(st);
+
+        BitManupiation btm = new BitManupiation();
+        int n=6;
+        int i=2;
+        int j= 2;
+        int newBit = 0;
+        char ch = 'B';
+        // btm.oddEven();
+        // btm.getBit(n,i);
+        // btm.setBit(n,i);
+        // btm.clearBit(n,i);
+        // btm.updateBit(n, i, newBit);
+        // btm.clearLastBits(n,i);
+        // btm.clearRangeBits(n,i,j);
+        // System.out.println(btm.isPowerofTwo(n));
+        // System.out.println(btm.countSetBits(n));
+        // btm.fastExponentation(n, i);
+        // btm.swapNumbers(n,i);
+        // btm.q3(n);
+        btm.q4(ch);
+
 
 
 
