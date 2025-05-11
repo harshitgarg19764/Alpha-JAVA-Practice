@@ -129,7 +129,7 @@ public class Alpha {
         // btm.fastExponentation(n, i);
         // btm.swapNumbers(n,i);
         // btm.q3(n);
-        btm.q4(ch);
+        // btm.q4(ch);
 
 
 
