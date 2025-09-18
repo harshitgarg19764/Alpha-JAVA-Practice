@@ -124,4 +124,91 @@ public class Strings {
         str.toLowerCase();
         System.out.println(str);
     }
+
+    public static void reverseStr(String str){
+        StringBuilder sb = new StringBuilder();
+        for(int i=str.length()-1;i>=0;i--){
+            sb.append(str.charAt(i));
+        }
+        System.out.println(sb.toString());
+    }
+    public static void commtoArr(String str){
+        String arr[] =  str.split(",");
+        for(int i=0;i<arr.length;i++){
+            System.out.println(arr[i]);
+        }
+    }
+    // import java.util.*;
+// class Solution {
+    public static int compress(char[] chars) {
+       String str = new String(chars);
+       StringBuilder sb = new StringBuilder();
+       int sum =1;
+       for(int i=0;i<str.length();i++){
+            int count =1;
+            // int sum =0;
+            while(i<str.length()-1 && str.charAt(i)==str.charAt(i+1)){
+                count++;
+                // sum++;
+                i++;
+            }
+            sb.append(str.charAt(i));
+            // if(count>1){
+                sb.append(count);
+            // }
+       }
+            chars = sb.toString().toCharArray();
+            for(int i=0;i<chars.length;i++){
+                System.out.println(chars[i]);
+            }
+            return chars.length;
+    }
+
+    //! 443 String-Compression Leetcode
+    public int compress443(char[] chars) {
+
+       StringBuilder sb = new StringBuilder();
+       int sum =1;
+       for(int i=0;i<chars.length;i++){
+            int count =1;
+            while(i<chars.length-1 && chars[i]==chars[i+1]){
+                count++;
+                i++;
+            }
+            sb.append(chars[i]);
+            if(count>1){
+                sb.append(count);
+            }
+       }
+            char comp[] = sb.toString().toCharArray();
+            for(int i=0;i<comp.length;i++){
+                chars[i] = comp[i];
+            }
+            return comp.length;
+    }
+    //! 14 longest common prefix
+    public String longestCommonPrefix(String[] strs) {
+        StringBuilder sb = new StringBuilder();
+        // Arrays.sort(strs);
+        for(int i=0;i<strs[0].length();i++){
+            char ch = strs[0].charAt(i);
+            boolean bl = true;
+            for(int j=1;j<strs.length;j++){
+                if(i>=strs[j].length() || strs[j].charAt(i)!=ch){
+                    bl=false;
+                    break;
+                }
+            }
+            if(bl==false){
+                break;
+            }
+            else if(bl==true){
+                sb.append(ch);
+            }
+
+
+        }                                                                              
+            return sb.toString();
+    }
+    
 }

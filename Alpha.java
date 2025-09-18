@@ -4,7 +4,6 @@ import java.util.*;
 public class Alpha {
     public static void main(String[] args) {
 
-
         Variable vrb = new Variable();
             // vrb.q1();
             // vrb.q2();
@@ -65,7 +64,7 @@ public class Alpha {
             // apn.PalindromicNum();
 
         Arrays arr = new Arrays();
-            int num[] = {1,2,3,4};
+            int num[] = {6,4,7,9};
             int key = 1;
 
                 // arr.largestNum(num);
@@ -86,9 +85,12 @@ public class Alpha {
                 // arr.rainWater(num);
                 // arr.buySellStock(num);
                 // arr.q3(num);
+                // arr.swap(num);
 
         Sort srt = new Sort();
-        // srt.bubbleSort(num);
+            int srtArr[] = {10,15,9,3,8};
+            // srt.bubbleSort(srtArr);
+            // srt.bubbleSortDec(srtArr);
 
         TwoDimensionArray tda = new TwoDimensionArray();
         int matrix[][]={{1,2,3},{10,10,10},{10,7,12}};
@@ -101,7 +103,8 @@ public class Alpha {
         // tda.q3(matrix);
 
         Strings str = new Strings();
-        String st = "ABCD";
+        String st = "A,B,C,D";
+        char stt[] ={'a'};
         String st1 = "dcan";
         // System.out.println(str.pallindromeString(st));
         // str.shortestPath(st);
@@ -110,10 +113,13 @@ public class Alpha {
         // str.q1(st);
         // str.q2(st, st1);
         // str.tolower(st);
+        // str.reverseStr(st);
+        // str.commtoArr(st);
+        // System.out.println(str.compress(stt));
 
-        BitManupiation btm = new BitManupiation();
+        BitManipulation btm = new BitManipulation();
         int n=6;
-        int i=2;
+        // int i=2;
         int j= 2;
         int newBit = 0;
         char ch = 'B';
@@ -130,6 +136,70 @@ public class Alpha {
         // btm.swapNumbers(n,i);
         // btm.q3(n);
         // btm.q4(ch);
+
+        // Oops ops = new Oops();
+
+        Recurrsion rcr = new Recurrsion();
+        int rcrarr[] = {4,7,2,6,8,2,8,2,8};
+        n=0;
+        key=2;
+        String rcrstr = "abcab";
+        String numarr[] = new String[10];
+        numarr[0] = "zero";
+        numarr[1] = "one";
+        numarr[2] = "two";
+        numarr[3] = "three";
+        numarr[4] = "four";
+        numarr[5] = "five";
+        numarr[6] = "six";
+        numarr[7] = "seven";
+        numarr[8] = "eight";
+        numarr[9] = "nine";
+        // int rcrarr2[] =  new int[5];
+        // String str = "";
+
+        // rcr.decNum(10);
+        // rcr.incNum(10);
+        // System.out.println(rcr.sum(n));
+        // System.out.println(rcr.fib(n));
+        // System.out.println(rcr.firstOccurence(rcrarr, n, key));
+        //? System.out.println(rcr.lastOccurence(rcrarr, n, key));
+        // System.out.println(rcr.xPowN(n,key));
+        // System.out.println(rcr.tilingProblem(n));
+        // System.out.println(rcr.removeDuplicate(rcrstr, n, new StringBuilder(""), new boolean[26]));
+        // System.out.println(rcr.friendsPairing(4));
+        // System.out.println(rcr.powThree(9));
+        // System.out.println(rcr.numPowThree(rcrarr,0));
+        // rcr.binaryString(4, 0,"");
+        // rcr.countOccurrences1(rcrarr, key, 0);
+        // rcr.stringConversion(2010, "", numarr);
+        // System.out.println(rcr.countSubstring(rcrstr,0, 0,rcrstr.length(), "",0));
+
+
+        DivideConquerer dcr = new DivideConquerer();
+        int dcrarr[] = {2,3,5,6,8,9};
+
+        // dcr.mergeSort(dcrarr,0,dcrarr.length-1);
+        // dcr.quickSort(dcrarr, 0, dcrarr.length-1);
+        // for(int i=0;i<dcrarr.length;i++){
+        //     System.out.println(dcrarr[i]);
+        // }
+
+        Backtracking btk = new Backtracking();
+        int btkarr[]= new int[5];
+        String btkstr = "abc";
+        // btk.changeArray(btkarr, 0, 1);
+        // btk.printArr(btkarr);
+        btk.findSubset(btkstr, 0, "");
+
+
+
+
+        
+
+
+        
+
 
 
 
