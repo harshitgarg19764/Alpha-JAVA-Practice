@@ -105,9 +105,8 @@ public class TwoDimensionArray {
                 System.out.println(row + "," + col);
                 return true;
             }
-            else if (key < arr[row][col]) 
-            {
-              col--;  
+            else if (key < arr[row][col]) {
+                col--;  
             }
             else{
                 row++;
@@ -178,5 +177,14 @@ public class TwoDimensionArray {
                 System.out.println();
             }
         }
+
+     public void rotate(int[][] matrix) {
+        int  newArr[][] = new int[matrix.length][matrix[0].length];
+        for(int i=0;i<matrix.length;i++){
+            for(int j=0;j<matrix[0].length;j++){
+                matrix[i][j]=matrix[matrix.length-j-1][i];
+            }
+        }
+    }
 }
 

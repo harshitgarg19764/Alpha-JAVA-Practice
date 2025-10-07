@@ -138,8 +138,6 @@ public class Strings {
             System.out.println(arr[i]);
         }
     }
-    // import java.util.*;
-// class Solution {
     public static int compress(char[] chars) {
        String str = new String(chars);
        StringBuilder sb = new StringBuilder();
@@ -210,5 +208,4 @@ public class Strings {
         }                                                                              
             return sb.toString();
     }
-    
 }

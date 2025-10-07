@@ -1,4 +1,3 @@
-import java.util.Scanner;
 import java.util.*;
     
 public class Alpha {
@@ -94,10 +93,11 @@ public class Alpha {
 
         TwoDimensionArray tda = new TwoDimensionArray();
         int matrix[][]={{1,2,3},{10,10,10},{10,7,12}};
+        int keytd =3;
         // tda.minMax();
         // tda.spiralMatrix(matrix);
         // tda.diaognalSum(matrix);
-        // tda.staircaseSearch(matrix, key);
+        // tda.staircaseSearch(matrix, keytd);
         // tda.q1(matrix);
         // tda.q2(matrix);
         // tda.q3(matrix);
@@ -190,7 +190,31 @@ public class Alpha {
         String btkstr = "abc";
         // btk.changeArray(btkarr, 0, 1);
         // btk.printArr(btkarr);
-        btk.findSubset(btkstr, 0, "");
+        // btk.findSubset(btkstr, 0, "");
+        // btk.findPermutations(btkstr, "");
+
+
+        ArrayLists arl = new ArrayLists();
+        ArrayList<Integer> list = new ArrayList<>();
+        // list.add(4);
+        list.add(1);
+        list.add(3);
+        list.add(5);
+        list.add(3);
+        // list.add(6);
+        // list.add(7);
+        // list.add(8);
+        // list.add(9);
+        int arlTarget = 50;
+        // arl.printList();
+        // arl.maxElement();
+        // arl.multiDimenssionArrlist();
+        // System.out.println(arl.containerMostWater(list));
+        // System.out.println(arl.pairSum(list, arlTarget));
+        // System.out.println(arl.isMonotone(list));
+        System.out.println(arl.lonelyNumber(list));
+
+
 
 
 
