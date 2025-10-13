@@ -45,9 +45,9 @@ public class Alpha {
             // mtd.DectoBit();
             // System.out.println(mtd.q1(3,4,5));
             // System.out.println(mtd.q2(6));
-            //    mtd.q3(121);
-            //    mtd.q4(4,5);
-            //    mtd.q5(123);
+            // mtd.q3(121);
+            // mtd.q4(4,5);
+            // mtd.q5(123);
 
         AdvancePattern apn = new AdvancePattern();
             // apn.HollowRectangle();
@@ -197,10 +197,10 @@ public class Alpha {
         ArrayLists arl = new ArrayLists();
         ArrayList<Integer> list = new ArrayList<>();
         // list.add(4);
-        list.add(1);
-        list.add(3);
+        list.add(10);
+        list.add(6);
         list.add(5);
-        list.add(3);
+        list.add(8);
         // list.add(6);
         // list.add(7);
         // list.add(8);
@@ -212,7 +212,34 @@ public class Alpha {
         // System.out.println(arl.containerMostWater(list));
         // System.out.println(arl.pairSum(list, arlTarget));
         // System.out.println(arl.isMonotone(list));
-        System.out.println(arl.lonelyNumber(list));
+        // System.out.println(arl.lonelyNumber(list));
+
+
+        LinkedLists lls = new LinkedLists();
+        lls.addFirst(1);
+        // lls.addFirst(2);
+        lls.addLast(2);
+        lls.addLast(3);
+        lls.print();
+        System.out.println(lls.isPalindrome());
+        // lls.addMiddle(7, 3);
+        // lls.print();
+        // lls.removeFirst();
+        // lls.print();
+        // lls.removeLast();
+        // lls.print();
+        // System.out.println(lls.size);
+        // System.out.println(lls.iterativeSearch(4));
+        // System.out.println(lls.recurssiveSearch(11));
+        // lls.reverse();
+        // lls.print();   
+        // lls.removeNthNode(1);  
+        // lls.print();
+
+        
+
+
+
 
 
 
