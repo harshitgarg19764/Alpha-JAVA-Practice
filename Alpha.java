@@ -215,15 +215,17 @@ public class Alpha {
         // System.out.println(arl.lonelyNumber(list));
 
 
+        
         LinkedLists lls = new LinkedLists();
         lls.addFirst(1);
-        // lls.addFirst(2);
+        lls.addFirst(2);
         lls.addLast(2);
         lls.addLast(3);
         lls.print();
-        System.out.println(lls.isPalindrome());
-        // lls.addMiddle(7, 3);
-        // lls.print();
+        // System.out.println(lls.isPalindrome());
+        lls.addMiddle(7, 3);
+
+
         // lls.removeFirst();
         // lls.print();
         // lls.removeLast();
@@ -235,6 +237,7 @@ public class Alpha {
         // lls.print();   
         // lls.removeNthNode(1);  
         // lls.print();
+
 
         
 

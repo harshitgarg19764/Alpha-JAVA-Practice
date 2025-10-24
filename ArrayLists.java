@@ -245,3 +245,14 @@ Choose the target with the maximum count and return it. */
 
 
 }
+// public static int frequentNumber(ArrayList<Integer> list,int key){
+//     ArrayList<Integer> count = new ArrayList<>();
+//     ArrayList<Integer> target = new ArrayList<>();
+//     for(int i=0;i<list.size()-1;i++){
+//         int nextNum = list.get(i+1);
+//         if(list.get(i)==key){
+//             if(target.contains(nextNum)){
+//                 int indx = target.indexOf(nextNum);
+//             }
+//         }
+//     }
