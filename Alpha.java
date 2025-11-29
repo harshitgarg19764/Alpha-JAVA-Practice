@@ -63,7 +63,7 @@ public class Alpha {
             // apn.PalindromicNum();
 
         Arrays arr = new Arrays();
-            int num[] = {6,4,7,9};
+            int num[] = {-1};
             int key = 1;
 
                 // arr.largestNum(num);
@@ -217,13 +217,13 @@ public class Alpha {
 
         
         LinkedLists lls = new LinkedLists();
-        lls.addFirst(1);
-        lls.addFirst(2);
-        lls.addLast(2);
-        lls.addLast(3);
-        lls.print();
+        // lls.addFirst(1);
+        // lls.addFirst(2);
+        // lls.addLast(2);
+        // lls.addLast(3);
+        // lls.print();
         // System.out.println(lls.isPalindrome());
-        lls.addMiddle(7, 3);
+        // lls.addMiddle(7, 3);
 
 
         // lls.removeFirst();
@@ -239,9 +239,62 @@ public class Alpha {
         // lls.print();
 
 
+        DoublyLinkedList dll = new DoublyLinkedList();
+        // dll.addFirst(3);
+        // dll.addFirst(2);
+        // dll.addFirst(1);
+        // dll.print();
+        // dll.removeFirst();
+        // dll.print();
+        // dll.addLast(4);
+        // dll.print();
+        // dll.removeLast();
+        // dll.print();
+        // dll.reverse();
+        // dll.print();
+
+        StackD s = new StackD();
+        Stack<Integer> stk = new Stack<>();
         
+        int stkarr[] = {6,8,0,1,3};
+        String stkstr = "(((a+b)+(c)))";
+
+        stk.push(1);
+        stk.push(2);
+        stk.push(3);
+        // s.pushAtBottom(stk, 4);
+        // s.printStack(stk);
+        // System.out.println(s.reverseString("abc"));
+        // s.reverseStack(stk);
+        // s.printStack(stk);
+        // s.nextGreaterElement(stkarr);
+        // System.out.println(s.validParentheses(stkstr));
+        // System.out.println(s.duplicateParentheses(stkstr));
 
 
+        Queues q = new Queues();
+        //! Using LinkedList Class
+        Queue<Integer> que =new LinkedList<>();
+        
+        //! Using ArrayDeque Class
+        // Queue<Integer> q =new ArrayDeque<>();
+        que.add(1);
+        que.add(2);
+        que.add(3);
+        que.add(4);
+        que.add(5);
+        que.add(6);
+        que.add(7);
+        que.add(8);
+        que.add(9);
+        que.add(10);
+
+        // q.interleaveQueue(que);
+        // q.firstNonRepeatinLetter("aabccxb");
+        q.queueReversal(que);
+        while(!que.isEmpty()){
+            System.out.println(que.remove());
+        }
 
 
 

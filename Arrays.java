@@ -141,11 +141,11 @@ public class Arrays {
         currSum=0;
 
         for(int i=0;i<num.length;i++){
-            currSum = currSum +num[i];
-
             if(currSum<0){
                 currSum=0;
             }
+            currSum = currSum +num[i];
+
             max = Math.max(currSum,max);
         }
         System.out.println(max);

@@ -195,5 +195,42 @@ public class LinkedLists {
         }
         return true;
     }
+     public static boolean isCycle(){
+        Node slow =head;
+        Node fast=head;
+        while(fast !=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+            if(slow==fast){
+                return true;
+            }
+        }
+        return false;
+    }
+    public static void removeCycle(){
+        Node slow =head;
+        Node fast =head;
+        boolean exists = false;
+        while(fast !=null && fast.next!=null){
+            if(slow==fast){
+                exists=true;
+                break;
+            }
+            slow=slow.next;
+            fast=fast.next.next;
 
+        }
+        if(exists==false){
+            return;
+        }
+        slow =head;
+        Node prev = null;
+        
+        while(slow!=fast){
+            slow=slow.next;
+            prev=fast;
+            fast=fast.next;
+        }
+        prev.next=null;
+    }
 }
