@@ -84,7 +84,6 @@ public class Queues{
     //         head=tail=newNode;
     //         return;
     //     }
-
     //     tail.next = newNode;
     //     tail = newNode;
 
@@ -111,7 +110,7 @@ public class Queues{
     //     }
     //     return head.data;
     // }
-    // //! CIRCULAR QUEUE
+    // //! CIRCULAR ARRAY
     // public static int arr[];
     // public static int size;
     // public static int rear;

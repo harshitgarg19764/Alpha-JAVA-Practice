@@ -63,6 +63,4 @@ public class DivideConquerer {
         arr[i]=temp;
         return i;
     }
-
-
 }

@@ -1,6 +1,3 @@
-import java.lang.reflect.Array;
-import java.security.Key;
-import java.util.*;
 
 public class Recurrsion {
     public static void decNum(int n) {
@@ -210,5 +207,14 @@ public static String countSubstring(String str,int i,int j,int n,String emp,int 
     }
     return emp +"\n"+ countSubstring(str,i,j+1,n,emp,count);
     
+}
+
+public void nCoins(int n,String str){
+    if(n==0){
+        System.out.println(str);
+        return;
+    }
+    nCoins(n-1, str+'h');
+    nCoins(n-1, str+'t');
 }
 }

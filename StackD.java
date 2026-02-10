@@ -56,6 +56,8 @@ public class StackD {
     //     return head.data;
     // }
 
+    
+
     public static void pushAtBottom(Stack<Integer> s,int data){
             if(s.isEmpty()){
                 s.push(data);
@@ -158,5 +160,6 @@ public class StackD {
         }
         return false;
     }
+
 
 }

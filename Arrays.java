@@ -109,7 +109,7 @@ public class Arrays {
         System.out.println("smallest : "+ smallest);
         System.out.println("total subarraym : "+ts);
     }
-
+    //! try again
     public void prefixArr(int num[]){
         int subarr = 0;
         int prefix[] = new int[num.length];
@@ -171,7 +171,7 @@ public class Arrays {
         }
         System.out.print(totwater);  
     }
-
+    //! try again
     public void buySellStock(int num[]){
         int buyprice = Integer.MAX_VALUE;
         int maxprofit =0;
@@ -232,6 +232,11 @@ public class Arrays {
         for(int i=0;i<arr.length;i++){
             System.out.println(arr[i]);
         }
+    }
+
+    public static void sort(double[][] ratio, Comparator<Object> comparingDouble) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sort'");
     }
 }
 

@@ -63,7 +63,7 @@ public class Alpha {
             // apn.PalindromicNum();
 
         Arrays arr = new Arrays();
-            int num[] = {-1};
+            int num[] = {3,2,5,1,6};
             int key = 1;
 
                 // arr.largestNum(num);
@@ -174,6 +174,7 @@ public class Alpha {
         // rcr.countOccurrences1(rcrarr, key, 0);
         // rcr.stringConversion(2010, "", numarr);
         // System.out.println(rcr.countSubstring(rcrstr,0, 0,rcrstr.length(), "",0));
+        // rcr.nCoins(2,"");
 
 
         DivideConquerer dcr = new DivideConquerer();
@@ -192,6 +193,36 @@ public class Alpha {
         // btk.printArr(btkarr);
         // btk.findSubset(btkstr, 0, "");
         // btk.findPermutations(btkstr, "");
+        n=4;
+        char board[][] = new char[n][n];
+        for(int i=0;i<board.length;i++){
+            for(int k=0;k<board[0].length;k++){
+                board[i][k]='.';
+            }
+        }
+        
+        // btk.nQueens(board, 0);
+        // System.out.println("count =" + Backtracking.count);
+        // System.out.println(btk.maze(0, 0, 3, 3));
+        // System.out.println(btk.ratMaze(matrix,0, 0, 4, 4, null));
+
+        btk.ludo(4,"");
+        System.out.println(Backtracking.c);
+
+        int sudoku[][] = {
+    {5,3,0,0,7,0,0,0,0},
+    {6,0,0,1,9,5,0,0,0},
+    {0,9,8,0,0,0,0,6,0},
+    {8,0,0,0,6,0,0,0,3},
+    {4,0,0,8,0,3,0,0,1},
+    {7,0,0,0,2,0,0,0,6},
+    {0,6,0,0,0,0,2,8,0},
+    {0,0,0,4,1,9,0,0,5},
+    {0,0,0,0,8,0,0,7,9}
+};
+
+// System.out.println(btk.sudoku(sudoku,0, 0));
+// btk.printSudoku(sudoku);
 
 
         ArrayLists arl = new ArrayLists();
@@ -236,6 +267,17 @@ public class Alpha {
         // lls.reverse();
         // lls.print();   
         // lls.removeNthNode(1);  
+        // lls.print();
+
+        // lls.addFirst(5);
+        // lls.addLast(4);
+        // lls.addLast(3);
+        // lls.addLast(2);
+        // lls.addLast(1);
+        // lls.print();
+        // lls.head = lls.mergeSort(lls.head);
+        // lls.print();
+        // lls.zigzagLL();
         // lls.print();
 
 
@@ -291,21 +333,61 @@ public class Alpha {
 
         // q.interleaveQueue(que);
         // q.firstNonRepeatinLetter("aabccxb");
-        q.queueReversal(que);
-        while(!que.isEmpty()){
-            System.out.println(que.remove());
-        }
+        // q.queueReversal(que);
+        // while(!que.isEmpty()){
+        //     System.out.println(que.remove());
+        // }
 
 
 
+        HashSet<Integer> set = new HashSet<>();
+        // set.add(1);
+        // set.add(2);
+        // set.add(3);
+        // System.out.println(set);
+        // Iterator it = set.iterator();
+        // while(it.hasNext()){
+        //     System.out.println(it.next());
+        // }
 
 
+        HashMap<String,Integer> map = new HashMap<>();
+        
+        // map.put("India", 120);
+        // map.put("China", 150);
+        // map.put("USA", 30);
+
+        // //  System.out.println(map.get(""));
+        // for(Map.Entry<String,Integer> e : map.entrySet()){
+        //         System.out.println(e.getKey());
+        //         System.out.println(e.getValue());
+        // }
+
+
+        Hashmap hmp = new Hashmap();
+        int hmparr[] = {1,2,3,4};
+        int hmparr2[] = {1,5,6,7};
+        // hmp.majiorityElement(hmparr);
+        // hmp.unionTwoArray(hmparr, hmparr2);
 
 
         
+        Greedy grd = new Greedy();
+        int grdStart[] = {10,20,30};
+        int grdEnd[] = {60,100,120};
+        int chain[][]= {{5,24},{39,60},{5,28},{27,40},{50,90}};
+        int coins[] = {1,2,5,10,20,50,100,500,2000};
+        Integer costVer[] = {2,1,3,1,4};
+        Integer costHor[] = {4,1,2};
 
+        // grd.activitySelection(grdStart, grdEnd);
+        // grd.fractionalKnapsack(grdStart, grdEnd, 50);
+        // grd.minAbsoluteDifference(grdStart, grdEnd);
+        // grd.maxChainPairs(chain);
+        // grd.IndianCoins(coins, 590);
+        // grd.chocola(costVer, costHor);
+        // grd.balancedStringPartitions("LRRRRLLRLLRL");
 
-        
 
 
 

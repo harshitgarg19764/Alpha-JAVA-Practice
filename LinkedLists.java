@@ -195,7 +195,7 @@ public class LinkedLists {
         }
         return true;
     }
-     public static boolean isCycle(){
+     public boolean isCycle(){
         Node slow =head;
         Node fast=head;
         while(fast !=null && fast.next!=null){
@@ -207,7 +207,7 @@ public class LinkedLists {
         }
         return false;
     }
-    public static void removeCycle(){
+    public void removeCycle(){
         Node slow =head;
         Node fast =head;
         boolean exists = false;
@@ -232,5 +232,86 @@ public class LinkedLists {
             fast=fast.next;
         }
         prev.next=null;
+    }
+    public Node getMid(Node head){
+        Node slow = head;
+        Node fast = head.next;
+        while(fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        return slow;
+    }
+    public Node merge(Node head1,Node head2){
+        Node mergeLinkedList = new Node(-1);
+        Node temp = mergeLinkedList;
+        while(head1!=null && head2!=null){
+            if(head1.data<=head2.data){
+                temp.next = head1;
+                head1=head1.next;
+                temp=temp.next;
+            }
+            else{
+                temp.next = head2;
+                head2=head2.next;
+                temp=temp.next;
+            }
+        }
+        while(head1!=null){
+            temp.next = head1;
+            head1=head1.next;
+            temp=temp.next;
+        }
+        while(head2!=null){
+            temp.next = head2;
+            head2=head2.next;
+            temp=temp.next;
+        }
+        return mergeLinkedList.next;
+    }
+
+    public Node mergeSort(Node head){
+        //midNode
+        if(head == null || head.next == null){
+        return head;
+        }
+        Node mid =getMid(head);
+        Node rightHead=mid.next;
+        mid.next = null;
+        Node newLeft = mergeSort(head);
+        Node newRight= mergeSort(rightHead);
+        return merge(newLeft,newRight);
+    }
+
+
+    public void zigzagLL(){
+        //mid
+        Node mid = getMid(head);
+        //reverse
+
+        Node prev = null;
+        Node curr =mid.next;
+        mid.next = null;
+        Node next;
+        while(curr!=null){
+            next = curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
+        }
+        Node right=prev;
+        Node left =head; 
+        Node nextL,nextR;
+        while(left!=null && right!=null){
+            nextL=left.next;
+            left.next=right;
+            nextR=right.next;
+            right.next = nextL;
+
+            left = nextL;
+            right = nextR;
+        }
+
+        
     }
 }
