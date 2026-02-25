@@ -63,7 +63,7 @@ public class Alpha {
             // apn.PalindromicNum();
 
         Arrays arr = new Arrays();
-            int num[] = {3,2,5,1,6};
+            int num[] = {1,2,3};
             int key = 1;
 
                 // arr.largestNum(num);
@@ -219,6 +219,8 @@ public class Alpha {
     {0,6,0,0,0,0,2,8,0},
     {0,0,0,4,1,9,0,0,5},
     {0,0,0,0,8,0,0,7,9}
+
+    
 };
 
 // System.out.println(btk.sudoku(sudoku,0, 0));
